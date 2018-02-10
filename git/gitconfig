@@ -177,5 +177,10 @@
 	insteadOf = "gist:"
 
 [user]
-	name = Tympanix
-	email = tympanix@gmail.com
+	name = Fraektsvin
+	email = antonio_gonzales@live.dk
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
